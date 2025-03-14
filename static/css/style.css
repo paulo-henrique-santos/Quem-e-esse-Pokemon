@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "poketit";
+    src: url(/static/fonts/Ketchum.otf);
+}
+
+@font-face {
+    font-family: "poketxt";
+    src: url(/static/fonts/Pokemon\ Classic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "poketit";
+    background-color: #ef5350;
+    color: #fecc08;
+    text-shadow: -5px 0 #4058a1, 0 1px #4058a1, 1px 0 #4058a1, 0 -1px #4058a1;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    font-family: "poketxt";
+}
+
+main p {
+    padding-top: 2px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.container {
+    height: 493px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 2em auto;
+    padding: 1em;
+    background-image: url(/static/img/heroimage.jpg);
+}
+
+figure img {
+    height: 290px;
+}
+
+.card-button {
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5%;
+    flex-direction: column;
+}
+
+input {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #ef5350;
+    font-family: "poketxt";
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
