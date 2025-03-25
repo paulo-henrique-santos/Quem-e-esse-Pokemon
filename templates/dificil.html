@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é esse Pokémon?</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Quem é esse Pokémon?</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+        <h1>Tente adivinhar o Pokémon!</h1>
+        {% if msg %}
+        <p style="font-weight: bold;">{{ msg }}</p>
+        {% endif %}
+        </div>
+        <div class="container">
+            <div class="card-button">
+                    <figure>
+                    <img src="{{ imagem }}" alt="">
+                    </figure>
+                    <div class="resposta">
+                        <form action="/facil" method="POST">
+                            <input type="text" name="nome" placeholder="Responda aqui..." required>
+                        </form>
+                            <button value="Refresh Page" onclick="window.location.reload()">Próximo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Feito por: <a href="https://github.com/paulo-henrique-santos">Paulo Henrique dos Santos</a></p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem é esse Pokémon?</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Quem é esse Pokémon</title>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Quem é esse Pokémon?</h1>
+            Quem é Esse Pokémon!?
         </nav>
     </header>
     <main>
         <div class="titulo">
-        <h1>Tente adivinhar o Pokémon!</h1>
-        {% if msg %}
-        <p style="font-weight: bold;">{{ msg }}</p>
-        {% endif %}
+            <h1>Escolha a dificuldade!</h1>
         </div>
         <div class="container">
-            <div class="card-button">
-                    <figure>
-                    <img src="{{ imagem }}" alt="">
-                    </figure>
-                    <div class="resposta">
-                        <form action="/" method="POST">
-                            <input type="text" name="res" placeholder="Responda aqui..." required>
-                            <button type="submit">Enviar</button>
-                        </form>
-                        
+            <div class="facil">
+                <a href="/facil">
+                    <div class="card-button">
+                        <figure>
+                            <img src="/static/img/facil.png" alt="">
+                        </figure>
+                        <div class="descricao">
+                            <p>Fácil</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="medio">
+                <a href="/medio">
+                    <div class="card-button">
+                        <figure>
+                            <img src="/static/img/medio.png" alt="">
+                        </figure>
+                        <div class="descricao">
+                            <p>Médio</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="dificil">
+                <a href="/dificil">
+                    <div class="card-button">
+                        <figure>
+                            <img src="/static/img/dificil.png" alt="">
+                        </figure>
+                        <div class="descricao">
+                            <p>Difícil</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
     <footer>
-        <p>Feito por: <a href="https://github.com/paulo-henrique-santos">Paulo Henrique dos Santos</a></p>
+        <p>Feito por: <a href="https://github.com/paulo-henrique-santos">Paulo Henrique</a></p>
     </footer>
-    <script src="../js/script.js"></script>
 </body>
 </html>
