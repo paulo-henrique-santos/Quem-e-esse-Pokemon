@@ -21,7 +21,6 @@ O site "Quem é Esse Pokémon!?" foi criado para testar a minha habilidade de us
  - ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
  - ![image](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ## Autores
-Mencione o nome dos alunos responsáveis pelo desenvolvimento do projeto e seus respectivos contatos.
 - Paulo Henrique dos Santos - GitHub - paulosesisenai@gmail.com
 ## Status
 🚀 Projeto Lançado 🚀
